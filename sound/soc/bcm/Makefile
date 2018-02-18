@@ -11,6 +11,9 @@ obj-$(CONFIG_SND_SOC_CYGNUS) += snd-soc-cygnus.o
 # Google voiceHAT custom codec support
 snd-soc-googlevoicehat-codec-objs := googlevoicehat-codec.o
 
+# TPA Hermes-RPi custom codec support
+snd-soc-tpa-hermes-rpi-codec-objs := tpa-hermes-rpi-codec.o
+
 # BCM2708 Machine Support
 snd-soc-adau1977-adc-objs := adau1977-adc.o
 snd-soc-googlevoicehat-soundcard-objs := googlevoicehat-soundcard.o
@@ -37,6 +40,7 @@ snd-soc-allo-piano-dac-plus-objs := allo-piano-dac-plus.o
 snd-soc-allo-digione-objs := allo-digione.o
 snd-soc-pisound-objs := pisound.o
 snd-soc-fe-pi-audio-objs := fe-pi-audio.o
+snd-soc-tpa-hermes-rpi-objs := tpa-hermes-rpi.o
 
 obj-$(CONFIG_SND_BCM2708_SOC_ADAU1977_ADC) += snd-soc-adau1977-adc.o
 obj-$(CONFIG_SND_BCM2708_SOC_GOOGLEVOICEHAT_SOUNDCARD) += snd-soc-googlevoicehat-soundcard.o
@@ -64,3 +68,5 @@ obj-$(CONFIG_SND_BCM2708_SOC_ALLO_PIANO_DAC_PLUS) += snd-soc-allo-piano-dac-plus
 obj-$(CONFIG_SND_BCM2708_SOC_ALLO_DIGIONE) += snd-soc-allo-digione.o
 obj-$(CONFIG_SND_PISOUND) += snd-soc-pisound.o
 obj-$(CONFIG_SND_BCM2708_SOC_FE_PI_AUDIO) += snd-soc-fe-pi-audio.o
+obj-$(CONFIG_SND_BCM2708_SOC_TPA_HERMES_RPI) += snd-soc-tpa-hermes-rpi.o
+obj-$(CONFIG_SND_BCM2708_SOC_TPA_HERMES_RPI) += snd-soc-tpa-hermes-rpi-codec.o

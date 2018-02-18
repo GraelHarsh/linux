@@ -1661,6 +1661,12 @@ Params: speed                   Display SPI bus speed
                 dtoverlay=tinylcd35,touch,touchgpio=3
 
 
+Name:   tpa-hermes-rpi
+Info:   Configures the TPA Hermes-RPi audio card
+Load:   dtoverlay=tpa-hermes-rpi,<param>
+Params: max192                  Limit max samplerate to 192kHz.
+
+
 Name:   uart0
 Info:   Change the pin usage of uart0
 Load:   dtoverlay=uart0,<param>=<val>
